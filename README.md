@@ -1,46 +1,25 @@
-class Animal:
+# Animal Class
 
-    # Constructor
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+This Java project demonstrates the implementation of an Animal class that satisfies three out of four Object-Oriented Programming (OOP) principles: Inheritance, Encapsulation, and Abstraction.
 
-    # Setters and getters
-    def set_name(self, name):
-        self.name = name
+## Animal Class
 
-    def get_name(self):
-        return self.name
+The `Animal` class represents a generic animal and contains attributes such as name and age, along with getter and setter methods to access and modify these attributes. It also includes an abstract method `makeSound()` for producing animal sounds.
 
-    def set_age(self, age):
-        self.age = age
+## Driver Class
 
-    def get_age(self):
-        return self.age
+The `Driver` class serves as a test driver for the `Animal` class. It creates an instance of `Animal`, modifies its attributes using setter methods, retrieves and displays the updated information using getter methods, and calls the `makeSound()` method to demonstrate abstraction.
 
-    # Abstract method
-    def make_sound(self):
-        pass
+## OOP Principles Demonstrated
 
-# Child class of Animal
-class Lion(Animal):
+1. **Inheritance**: The `Animal` class can serve as a parent class for more specific animal types, inheriting its properties and methods.
+2. **Encapsulation**: The attributes `name` and `age` are encapsulated within the `Animal` class, ensuring data integrity through getter and setter methods.
+3. **Abstraction**: The `Animal` class contains an abstract method `makeSound()`, allowing subclasses to provide specific implementations.
 
-    def __init__(self, name, age):
-        super().__init__(name, age)
+## Usage
 
-    # Override the make_sound method
-    def make_sound(self):
-        print("The lion roars.")
+To compile and run the code, follow these steps:
 
-# Driver class
-class Driver:
+1. Clone the repository:
 
-    def __init__(self):
-        self.animal = Lion("Leo", 10)
 
-    def run(self):
-        self.animal.make_sound()
-
-# Create a driver object and run the code
-driver = Driver()
-driver.run()
