@@ -1,3 +1,4 @@
+NOTE: The file is inside => Animal/src
 # Animal Class
 
 This Java project demonstrates the implementation of an Animal class that satisfies three out of four Object-Oriented Programming (OOP) principles: Inheritance, Encapsulation, and Abstraction.
